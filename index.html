@@ -1,133 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <!-- MAIN CONTAINER -->
-		<div id="main_container">
-            <!-- HEADER -->
-            <div id="header">
-              <!-- LOGOTYPE/NAME -->
-              <div class="header_logotype_container">
-                <h1 class="logotype_name">Iury <span class="purple">Lemos</span></h1>
-                <h2 class="logotype_occupation">Frontend Web Developer</h2>
-              </div>
-              <!-- MAIN MENU -->
-              <div class="header_menu_container">
-                <ul class="download_print_buttons horizontal_list">
-                  <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
-                  <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
-                </ul>
-                <div class="clear"></div>
-                <ul class="header_menu horizontal_list">
-                  <li><a class="no_border purple" href="#">Perfil</a></li>
-                  <li><a href="#">Educação</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Experiência de trabalho</a></li>
-                  <li><a href="#">Projetos destaque</a></li>
-                </ul>
-              </div>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="assets/icons/site.webmanifest">
+        <title>Portfólio Iury</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>Fechar</span>
             </div>
-            <!-- LEFT COL -->
-            <div id="left_col">
-              <div class="profile_frame">
-                <div class="profile_picture"></div>
-                <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
-              </div>
-              <div class="hello_content">
-                <h2>Olá!</h2>
-                <p>Sou apaixonado por tecnologia e comportamento humano, trabalhador e um aprendiz rápido, trabalhando e voluntariando</p>
-              </div>
-              <div class="contact_details_content">
-                <h2>Detalhes para contato:</h2>
-                <p class="purple">Telefone:</p>
-                <p>(85) 989302273</p>
-                <p class="purple">Email:</p>
-                <p>iurylemos4@gmail.com</p>
-                <p class="purple">Endereço:</p>
-                <p>Fortaleza, Ceará</p>
-              </div>
-              <a href="mailto:jlalovi@gmail.com" class="send_message_button">
-                <span class="cut1"></span>
-                <span class="cut2"></span>
-                <span class="content">Me envie uma mensagem <span class="fontawesome-double-angle-right"></span></span>
-              </a>
-              <div class="get_social_content">
-                <h2>Socializar</h2>
-                <ul class="social_icons horizontal_list">
-                  <!-- <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li> -->
-                  <!-- <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li> -->
-                  <li><a class="linkedin" href="https://www.linkedin.com/in/claudio-iury-lemos-maia-1811b4155/"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- PROFILE CONTENT -->
-            <div id="content_container">				
-              <div class="block">
-                <h1>Perfil</h1>
-                <blockquote class="profile_quote">
-                  <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
-                  <p>Jiddu Krishnamurti.</p>
-                  <span class="entypo-quote"></span>
-                </blockquote>
-              </div>
-              <div class="block">
-                <h2>Algumas palavras sobre mim</h2>
-                <p>Até agora, na minha vida, passo de momentos ativos com muita variedade, desafios e improvisações, para momentos de tranquilidade e estabilidade, sendo difícil permanecer em um local por muito tempo. Eu me considero uma pessoa tolerante e respeitosa com a mente aberta e bastante honesta. Eu realmente gosto de ouvir as histórias e experiências das pessoas e suas diferentes experiências.</p>				
-              </div>
-              <div class="horizontal_line">
-                <div class="line_left"></div>
-                <div class="left_circle"></div>
-                <div class="central_circle"></div>
-                <div class="right_circle"></div>
-                <div class="line_right"></div>
-              </div>
-              <div class="block">
-                <h2>Filosofia</h2>
-                <p>Eu acredito em ética e moral, não em regras impostas que você "tem que" fazer ou seguir.</p>
-                <div class="philosophy_content">
-                  <p>Eu acredito que a vida é feita de diferentes tons de cinza, não de preto e branco. Além disso, como um ser humano com racionalidade, acho que é nosso dever cuidar do mundo e tratar os outros como gostaríamos que os outros tratassem a si mesmo. Essa forma de perceber a realidade afeta minhas crenças e minha maneira de me comportar. Resumindo em vários pontos:</p>
-                  <ul>
-                    <li>Honestidade</li>
-                    <li>Respeito</li>
-                    <li>Sinceridade</li>
-                    <li>Mente aberta</li>
-                    <li>Coerente</li>
-                  </ul>
-                  <div class="clear"></div>
+
+            <header>
+                <div class="img-wrapper">
+                    <img src="assets/images/img-header.jpg" alt="Foto Header">
                 </div>
-              </div>
-              <div class="horizontal_line">
-                <div class="line_left"></div>
-                <div class="left_circle"></div>
-                <div class="central_circle"></div>
-                <div class="right_circle"></div>
-                <div class="line_right"></div>
-              </div>
-              <div class="last block">
-                <h2>Experiência de trabalho</h2>
-                <p>Tenho experiências com freelance, e também como clt, e tenho conhecimento nessas tecnologias:</p>
-                <ul>
-                  <li>ReactJS</li>
-                  <li>Angular</li>
-                  <li>Flutter</li>
-                  <li>React Native</li>
-                  <li>Ionic</li>
-                  <li>NodeJS</li>
-                  <li>EJS</li>
-                </ul>
-              </div>
-            </div>
-            <div class="clear"></div>
-            <!-- FOOTER -->
-            <div id="footer">
-              <p class="footer_name">Iury Lemos @</p>
-            </div>
-              </div>
-</body>
+                <div class="banner">
+                    <h1>Web Developer & Front End Designer</h1>
+                    <p>Claudio Iury Lemos Maia</p>
+                    <button>Saiba mais</button>
+                </div>
+            </header>
+
+
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                        <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contatos" class="menu-link">Contato</a></li>
+                        <li class="menu-item"><a href="#orcamentos" class="menu-link">Orçamento</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social-media">
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-github-square"></i></a>
+                </div>
+            </aside>
+
+            <!-- section.sessao-conhecimentos>(.sessao-header>h1)+.conhecimentos -->
+            <section class="sessao-conhecimentos" id="conhecimentos">
+                <div class="sessao-header">
+                    <h1>Conhecimentos</h1>
+                </div>
+                <div class="conhecimentos">
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam accusantium laboriosam odit. Nam qui exercitationem voluptatibus architecto, culpa nulla assumenda minus tempore dolorem itaque odit illum nisi ex asperiores ducimus!</p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, saepe itaque dolore ex tenetur et, in corporis explicabo nesciunt, aperiam commodi iure eius dignissimos tempora. Cupiditate saepe officiis ut est.</p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h3>Design</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid reiciendis est quo at rerum assumenda, atque rem quod vero, neque dignissimos voluptatem. Libero suscipit ratione reiciendis deleniti. A, quo inventore.</p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti, sunt blanditiis neque omnis, nesciunt ipsum assumenda ipsa ratione accusamus expedita, provident enim. Facere, adipisci repudiandae. Impedit autem maiores at?</p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-bootstrap"></i>
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ducimus id neque in aliquam minima veritatis soluta vero, vel, reiciendis aperiam sunt quia consectetur tempore perspiciatis? Dolorum autem soluta dignissimos.</p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-github"></i>
+                            <h3>Git & GitHub</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus ipsam saepe placeat consectetur vel officiis dolorum voluptates incidunt dicta sunt iusto totam quasi vitae cum unde, ipsum debitis magnam!</p>
+                        </div>
+                    </div>
+
+                    <div class="conhecimento-img-wrapper">
+                        <img src="assets/images/conhecimentos.png" alt="imagem conhecimento">
+                    </div>
+                </div>
+            </section>
+
+            <section class="sessao-projetos" id="projetos">
+                <div class="sessao-header">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="projetos">
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/img-project01.jpg" alt="imagem projeto01">
+                        </div>
+                        <div class="card-info">
+                            <h2>ToDo List</h2>
+                            <h3>JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis at voluptatibus, mollitia provident, tempore qui, nostrum repudiandae corporis labore minima quam deserunt odit. Sint tenetur debitis voluptatibus assumenda maxime?</p>
+                            <button class="btn-global">Saiba Mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/img-project02.jpg" alt="imagem projeto02">
+                        </div>
+                        <div class="card-info">
+                            <h2>List Compras</h2>
+                            <h3>JavaScript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur, voluptatum molestiae delectus asperiores quisquam aspernatur suscipit! Beatae nostrum placeat velit consectetur molestiae debitis voluptatibus quisquam animi. Doloribus, velit unde!</p>
+                            <button class="btn-global">Saiba Mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/img-project03.jpg" alt="imagem projeto03">
+                        </div>
+                        <div class="card-info">
+                            <h2>Carrinho</h2>
+                            <h3>JavaScript</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus aperiam soluta reiciendis. Sequi est sed, velit ratione ea impedit distinctio numquam autem aliquid, incidunt assumenda nam neque error ab!</p>
+                            <button class="btn-global">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sessao-contato" id="contatos">
+                <div class="contato-wrapper">
+                    <div class="contato-left"></div>
+                    <div class="contato-right">
+                        <h1>Contato</h1>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="field" id="nome">
+                                <label for="nome" class="field-label">Nome</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="field" id="email">
+                                <label for="email" class="field-label">E-mail</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea class="field" id="mensagem"></textarea>
+                                <label for="mensagem" class="field-label">Mensagem</label>
+                            </div>
+                            <button type="submit" class="btn-submit btn-global">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sessao-orcamento" id="orcamentos">
+                <div class="orcamento-wrapper">
+                    <h1>Faça um orçamento</h1>
+                    <form action="">
+                        <label for="qtde">Quantidade de páginas</label>
+                        <input type="number" min="1" name="qtde" id="qtde">
+                        <label for="js">Preciso de um script JS</label>
+                        <input type="checkbox" name="js" id="js">
+                        <label>Layout</label>
+                        <div class="group-layout">
+                            <div>
+                                <input type="radio" name="layout" id="layout-sim">
+                                <label for="layout-sim">Preciso de um layout</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="layout" id="layout-nao">
+                                <label for="layout-nao">Já tenho um layout</label>
+                            </div>
+                        </div>
+                        <label for="prazo">Prazo</label>
+                        <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        <label id="preco">R$ 0,00</label>
+                        <button type="submit" class="btn-global btn-orcamento">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p>Copyright &copy; 2021</p>
+                    <div class="social-list">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            <a class="fas fa-arrow-up" href="#" id="link-to-topo"></a>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
