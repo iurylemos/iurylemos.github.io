@@ -13,13 +13,13 @@ export function ContactsComponent(): JSX.Element {
             <p className="font-bold text-purple-100 py-8 border-b border-purple-700">
               Endereço
               <span className="font-normal text-xs text-purple-300 block">
-                {"Fortaleza/CE, BRA"}
+                {"Fortaleza/CE, BR"}
               </span>
             </p>
             <p className="font-bold text-purple-100 py-8 border-b border-purple-700">
               Telefone
               <span className="font-normal text-xs text-purple-300 block">
-                +55 (85) 9 8930-2273
+                +55 (85) 9 8930 2273
               </span>
             </p>
             <p className="font-bold text-purple-100 py-8 border-b border-purple-700">

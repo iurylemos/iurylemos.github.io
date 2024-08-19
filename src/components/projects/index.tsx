@@ -12,9 +12,8 @@ export function ProjectsComponent(): JSX.Element {
             <Image
               src="/assets/images/img-project01.jpg"
               alt="imagem projeto01"
-              objectFit="contain"
-              layout="fill"
               className="object-cover"
+              fill
             />
           </div>
           <div className="card-info">
@@ -32,9 +31,8 @@ export function ProjectsComponent(): JSX.Element {
             <Image
               src="/assets/images/img-project02.jpg"
               alt="imagem projeto02"
-              objectFit="contain"
-              layout="fill"
               className="object-cover"
+              fill
             />
           </div>
           <div className="card-info">
@@ -52,9 +50,8 @@ export function ProjectsComponent(): JSX.Element {
             <Image
               src="/assets/images/img-project03.jpg"
               alt="imagem projeto03"
-              objectFit="contain"
-              layout="fill"
               className="object-cover"
+              fill
             />
           </div>
           <div className="card-info">
