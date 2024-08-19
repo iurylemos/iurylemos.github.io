@@ -6,15 +6,16 @@ runs:
     - name: Setup Node.js ⚙️
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version-file: ".nvmrc"
 
     - name: Cache dependencies ⚡
       id: cache_dependencies
       uses: actions/cache@v3
       with:
         path: node_modules
-        key: node-modules-${{ hashFiles('package.json') }}
+        key: node-modules-${{ hashFiles('package-lock.json') }}
 
     - name: Install dependencies 🔧
       shell: bash
-      run: npm install
+      if: steps.cache_dependencies.outputs.cache-hit != 'true'
+      run: npm ci

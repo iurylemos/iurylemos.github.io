@@ -10,7 +10,7 @@ export function ProjectsComponent(): JSX.Element {
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
             <Image
-              src="assets/images/img-project01.jpg"
+              src="/assets/images/img-project01.jpg"
               alt="imagem projeto01"
               objectFit="contain"
               layout="fill"
@@ -30,7 +30,7 @@ export function ProjectsComponent(): JSX.Element {
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
             <Image
-              src="assets/images/img-project02.jpg"
+              src="/assets/images/img-project02.jpg"
               alt="imagem projeto02"
               objectFit="contain"
               layout="fill"
@@ -50,7 +50,7 @@ export function ProjectsComponent(): JSX.Element {
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
             <Image
-              src="assets/images/img-project03.jpg"
+              src="/assets/images/img-project03.jpg"
               alt="imagem projeto03"
               objectFit="contain"
               layout="fill"
