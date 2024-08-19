@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function ProjectsComponent(): JSX.Element {
   return (
     <section className="sessao-projetos" id="projetos">
@@ -7,7 +9,13 @@ export function ProjectsComponent(): JSX.Element {
       <div className="projetos flex flex-col gap-8 sm:flex-row sm:gap-0">
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
-            <img src="assets/images/img-project01.jpg" alt="imagem projeto01" />
+            <Image
+              src="assets/images/img-project01.jpg"
+              alt="imagem projeto01"
+              objectFit="contain"
+              layout="fill"
+              className="object-cover"
+            />
           </div>
           <div className="card-info">
             <h2>ToDo List</h2>
@@ -21,7 +29,13 @@ export function ProjectsComponent(): JSX.Element {
         </div>
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
-            <img src="assets/images/img-project02.jpg" alt="imagem projeto02" />
+            <Image
+              src="assets/images/img-project02.jpg"
+              alt="imagem projeto02"
+              objectFit="contain"
+              layout="fill"
+              className="object-cover"
+            />
           </div>
           <div className="card-info">
             <h2>List Compras</h2>
@@ -35,7 +49,13 @@ export function ProjectsComponent(): JSX.Element {
         </div>
         <div className="card md:w-72 h-96">
           <div className="card-image-wrapper">
-            <img src="assets/images/img-project03.jpg" alt="imagem projeto03" />
+            <Image
+              src="assets/images/img-project03.jpg"
+              alt="imagem projeto03"
+              objectFit="contain"
+              layout="fill"
+              className="object-cover"
+            />
           </div>
           <div className="card-info">
             <h2>Carrinho</h2>
