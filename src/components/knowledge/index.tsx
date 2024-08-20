@@ -4,20 +4,15 @@ import {
   FaNodeJs,
   FaDocker,
   FaDatabase,
-  FaGithub,
   FaVuejs,
 } from "react-icons/fa";
 import {
-  SiNextdotjs,
-  SiTailwindcss,
   SiCapacitor,
-  SiTypescript,
-  SiJavascript,
   SiGraphql,
   SiPrisma,
-  SiJenkins,
   SiCypress,
   SiQuasar,
+  SiNestjs,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -37,34 +32,16 @@ const skills = [
       "Uma biblioteca JavaScript popular para construir interfaces de usuário, particularmente para aplicações de página única. O React permite a criação de componentes reutilizáveis.",
   },
   {
-    title: "Next.js",
-    icon: <SiNextdotjs className="text-black" />,
-    description:
-      "Um framework React que fornece renderização no lado do servidor, geração de sites estáticos e outras funcionalidades para construir aplicações web otimizadas e escaláveis.",
-  },
-  {
     title: "Vue.js",
     icon: <FaVuejs className="text-green-600" />,
     description:
       "Um framework JavaScript progressivo para construir interfaces de usuário e aplicações de página única. Oferece um ecossistema flexível e adotável incrementalmente.",
   },
   {
-    title: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-blue-500" />,
-    description:
-      "Um framework CSS utilitário-primeiro que fornece classes utilitárias de baixo nível para construir designs personalizados sem escrever CSS customizado.",
-  },
-  {
     title: "Node.js",
     icon: <FaNodeJs className="text-green-500" />,
     description:
       "Um ambiente de execução JavaScript baseado no motor V8 do Chrome que permite construir aplicações de rede escaláveis e realizar operações no lado do servidor.",
-  },
-  {
-    title: "Express",
-    icon: <FaNodeJs className="text-green-500" />,
-    description:
-      "Um framework web minimalista e flexível para Node.js que fornece um conjunto robusto de funcionalidades para construir aplicações web e móveis.",
   },
   {
     title: "Prisma",
@@ -97,28 +74,10 @@ const skills = [
       "Um framework Vue.js que permite construir sites responsivos, aplicativos web progressivos e aplicativos móveis com uma única base de código.",
   },
   {
-    title: "TypeScript",
-    icon: <SiTypescript className="text-blue-600" />,
-    description:
-      "Um superset tipado de JavaScript que compila para JavaScript puro, fornecendo tipagem estática opcional e ferramentas poderosas para construir aplicações em larga escala.",
-  },
-  {
-    title: "JavaScript",
-    icon: <SiJavascript className="text-yellow-500" />,
-    description:
-      "Uma linguagem de programação versátil, comumente usada para scripting no lado do cliente em desenvolvimento web para criar páginas web dinâmicas e interativas.",
-  },
-  {
     title: "Docker",
     icon: <FaDocker className="text-blue-500" />,
     description:
       "Uma plataforma para desenvolver, enviar e executar aplicações em contêineres leves, garantindo consistência em diferentes ambientes.",
-  },
-  {
-    title: "Git",
-    icon: <FaGithub className="text-gray-800" />,
-    description:
-      "Um sistema de controle de versão distribuído que permite a vários desenvolvedores trabalhar em um projeto simultaneamente e gerenciar mudanças de forma eficaz.",
   },
   {
     title: "React Native",
@@ -127,10 +86,10 @@ const skills = [
       "Um framework para criar aplicativos móveis nativos usando JavaScript e React. Ele permite criar apps multiplataforma para iOS e Android com um único código base.",
   },
   {
-    title: "Jenkins",
-    icon: <SiJenkins className="text-red-400" />,
+    title: "NestJS",
+    icon: <SiNestjs className="text-red-600" />,
     description:
-      "Um servidor de automação de código aberto usado para construir, testar e implantar software através de pipelines de integração contínua e entrega contínua (CI/CD).",
+      "Um framework para construir aplicações web eficientes e escaláveis usando TypeScript e Node.js. Ele permite a criação de APIs robustas com uma arquitetura modular e uma base de código unificada",
   },
   {
     title: "Cypress",

@@ -9,4 +9,5 @@ export const constants = {
     "node-microservices",
     "webapi-golang",
   ],
+  gitHubURL: "https://github.com/iurylemos",
 };
