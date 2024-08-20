@@ -13,6 +13,25 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        zoom: {
+          "0%": { transform: "scale(1.5)" },
+          "100%": { transform: "scale(1)" },
+        },
+        moveBanner: {
+          "0%": {
+            transform: "translateY(10rem) rotateY(-30deg)",
+          },
+          "100%": {
+            transform: "translateY(0) rotateY(0)",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        zoom: "zoom 25s",
+        moveBanner: "moveBanner 25s",
+      },
     },
   },
   plugins: [],
