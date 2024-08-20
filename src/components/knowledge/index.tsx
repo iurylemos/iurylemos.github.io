@@ -154,7 +154,10 @@ const SkillCard = React.memo(function SkillCard({ skill }: Skill) {
 
 export function KnowledgeComponent(): JSX.Element {
   return (
-    <section id="conhecimentos" className="p-8 md:px-24 md:py-12 bg-gray-100">
+    <section
+      id="conhecimentos"
+      className="p-8 md:px-24 md:py-12 bg-transparent"
+    >
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-12">
           Meus Conhecimentos e Habilidades

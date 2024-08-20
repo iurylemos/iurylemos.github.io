@@ -20,6 +20,62 @@ html {
   --font-primary: "Baloo Da 2", serif;
   --font-secundary: "Josefin Slab", serif;
   --font-action: "Mulish", serif;
+  --secondary-glow: conic-gradient(
+    from 10deg at 50% 50%,
+    #4a3b4b 0deg,
+    /* Dark purple */ #2c2f3e 55deg,
+    /* Dark gray-blue */ #1e2a40 120deg,
+    /* Dark blue */ #1b2e3b 160deg,
+    /* Darker blue-green */ transparent 360deg
+  );
+
+  --third-glow: conic-gradient(
+    from 90deg at 50% 50%,
+    #5c4b56 0deg,
+    /* Dark muted purple */ #2f3a4a 160deg,
+    /* Dark blue-gray */ #243a52 120deg,
+    /* Darker blue */ #2b3f59 55deg,
+    /* Dark blue-green */ transparent 360deg
+  );
+}
+
+body {
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  margin: 0; /* Ensure no default margin */
+  padding: 0; /* Ensure no default padding */
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed; /* Fixes the pseudo-elements in place */
+  z-index: -1; /* Ensure pseudo-elements are behind the content */
+  opacity: 0.8;
+  pointer-events: none; /* Prevent interaction with pseudo-elements */
+}
+
+body::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22skyGradient%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23001f3f%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23004080%22/%3E%3C/linearGradient%3E%3Cpattern%20id%3D%22starPattern%22%20width%3D%22100%22%20height%3D%22100%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2220%22%20r%3D%221%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2280%22%20cy%3D%2280%22%20r%3D%222.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2270%22%20r%3D%221%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%2240%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2260%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%2290%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22/%3E%3CanimateTransform%20attributeName%3D%22patternTransform%22%20type%3D%22translate%22%20by%3D%22100%20100%22%20dur%3D%2215s%22%20repeatCount%3D%22indefinite%22/%3E%3C/pattern%3E%3C/defs%3E%3Crect%20fill%3D%22url(%23skyGradient)%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3Crect%20fill%3D%22url(%23starPattern)%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3C/svg%3E");
+  border-radius: 50%;
+  width: 200vw; /* Increase width to cover more area */
+  height: 200vw; /* Increase height to cover more area */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the pseudo-element */
+  filter: blur(90px);
+  animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+body::after {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22skyGradient%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23001f3f%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23004080%22/%3E%3C/linearGradient%3E%3Cpattern%20id%3D%22starPattern%22%20width%3D%22100%22%20height%3D%22100%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2220%22%20r%3D%221%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2280%22%20cy%3D%2280%22%20r%3D%222.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2270%22%20r%3D%221%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%2240%22%20r%3D%222%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2260%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22/%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%2290%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22/%3E%3CanimateTransform%20attributeName%3D%22patternTransform%22%20type%3D%22translate%22%20by%3D%22100%20100%22%20dur%3D%2215s%22%20repeatCount%3D%22indefinite%22/%3E%3C/pattern%3E%3C/defs%3E%3Crect%20fill%3D%22url(%23skyGradient)%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3Crect%20fill%3D%22url(%23starPattern)%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3C/svg%3E");
+  border-radius: 50%;
+  width: 700px; /* Adjust size to fit your design */
+  height: 700px; /* Adjust size to fit your design */
+  filter: blur(90px);
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the pseudo-element */
+  animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
 }
 
 .btn-global {
@@ -453,7 +509,7 @@ section.sessao-contato .contato-wrapper .contato-right button.btn-submit {
 section.sessao-orcamento {
   width: 100%;
   height: 100vh;
-  background: url("/assets/images/orcamento.jpg");
+  background: transparent;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -601,4 +657,28 @@ a#link-to-topo {
 
 .animate-fadeIn {
   animation: fadeIn 0.5s forwards;
+}
+
+@keyframes animateBefore {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200px) scale(0.8);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateAfter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-250px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

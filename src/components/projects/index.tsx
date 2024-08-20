@@ -1,4 +1,3 @@
-import { constants } from "@/modules/constants";
 import { getRepoData } from "@/server/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,14 +9,9 @@ export default async function ProjectsComponent(): Promise<JSX.Element> {
 
   const starProjects = response.filter((project) => project.description);
 
-  console.log(
-    "starProjects",
-    response.filter((project) => project.description)
-  );
-
   return (
     <section
-      className="bg-[url('/assets/images/banner_projects.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center h-full"
+      className="bg-transparent flex items-center justify-center h-full"
       id="projetos"
     >
       <div className="m-8 md:mx-24 md:my-12 p-4 bg-transparent rounded-lg shadow-sm">

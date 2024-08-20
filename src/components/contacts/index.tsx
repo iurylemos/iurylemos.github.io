@@ -1,10 +1,10 @@
 export function ContactsComponent(): JSX.Element {
   return (
     <section
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50"
+      className="relative flex min-h-screen flex-col justify-center overflow-hidden"
       id="contacts"
     >
-      <div className="bg-white mx-auto w-full p-7 md:p-24">
+      <div className="mx-auto w-full p-7 md:p-24">
         <div className="flex flex-col md:grid grid-cols-6 h-full">
           <div className="bg-purple-900 p-10 col-span-2 rounded-lg">
             <h2 className="mb-10 font-bold text-2xl text-purple-100 before:block before:absolute before:bg-sky-300 before:content[''] relative before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">
