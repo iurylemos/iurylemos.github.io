@@ -5,7 +5,7 @@ export function HeroComponent(): JSX.Element {
         <h2 className="text-3xl font-semibold text-white">
           Olá,{" "}
           <span className="bg-indigo-600 text-white rounded px-1">
-            Eu sou Maia
+            Eu sou Iury
           </span>
           . Prazer conhecer você.
         </h2>

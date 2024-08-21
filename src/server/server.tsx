@@ -1,8 +1,12 @@
 import "server-only";
 
 import { GitHubRepo } from "@/interfaces/GitHubRepo.interface";
+import { GitHubUser } from "@/interfaces/GitHubUser.interface";
 
-export const getUserData = async (dataUser: string, authToken: string) => {
+export const getUserData = async (
+  dataUser: string,
+  authToken: string
+): Promise<GitHubUser> => {
   try {
     const userResponse = await fetch(
       `https://api.github.com/users/${dataUser}`,
@@ -35,7 +39,6 @@ export async function getRepoData(
       }
     );
     const reposData = await reposResponse.json();
-    console.log("reposData");
     return reposData;
   } catch (error) {
     console.error("Error fetching repository data:", error);
