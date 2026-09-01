@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Favicon from "../../public/assets/icons/favicon.ico";
 import "./globals.css";
 
@@ -50,13 +52,14 @@ export const viewport: Viewport = {
 };
 
 type RootLayoutProps = Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>;
 
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <GoogleTagManager gtmId="GTM-KH6L4MKV" />
     </html>
   );
 }
