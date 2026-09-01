@@ -1,4 +1,4 @@
-import React from "react";
+import { type ReactNode, memo, Fragment } from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -19,7 +19,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 type Skill = {
   skill: {
     title: string;
-    icon: React.ReactNode;
+    icon: ReactNode;
     description: string;
   };
 };
@@ -99,7 +99,7 @@ const skills = [
   },
 ];
 
-const SkillCard = React.memo(function SkillCard({ skill }: Skill) {
+const SkillCard = memo(function SkillCard({ skill }: Skill) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-200 ease-in-out hover:scale-105 opacity-0 animate-fadeIn">
       <div className="flex items-center justify-center mb-4 text-4xl">
@@ -120,9 +120,9 @@ export function KnowledgeComponent(): JSX.Element {
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
-            <React.Fragment key={skill.title}>
+            <Fragment key={skill.title}>
               <SkillCard skill={skill} />
-            </React.Fragment>
+            </Fragment>
           ))}
         </div>
       </div>

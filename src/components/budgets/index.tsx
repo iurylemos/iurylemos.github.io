@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 
 export function BudgetsComponent(): JSX.Element {
   const [quantidade, setQuantidade] = useState<number>(1);
@@ -23,9 +23,7 @@ export function BudgetsComponent(): JSX.Element {
   };
 
   // Update prazo label dynamically
-  const handlePrazoChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ): void => {
+  const handlePrazoChange = (event: ChangeEvent<HTMLInputElement>): void => {
     setPrazo(parseInt(event.target.value, 10));
     updatePrice();
   };
